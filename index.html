@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            background-color: lightyellow;
+        }
+
+        #redbox {
+            height: 50px;
+            width: 100%;
+            background-color: darkred;
+            text-align: center;
+            color: white;
+        }
+
+        #redbox p {
+            font-style: italic;
+            margin-top: 0px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table td {
+            border: 1px solid black;
+
+        }
+
+        .checkboxtypes {
+            display: inline-block;
+            margin-left: 50px;
+        }
+
+        .spacing {
+            display: inline-block;
+            margin-left: 40px;
+        }
+
+        .namebox{
+          display: inline-block;
+        }
+
+        .DOB{
+        margin-left:400px;
+        display:inline-block;
+        }
+        
+        
+        .officeaddress {
+          float:right;
+          width: 25%;
+        }
+        
+        .row:after {
+         content: "";
+         display: table;
+        clear: both;
+        }
+        
+        
+        .DropdownS{
+          display: inline-block;
+          margin-left: 370px;
+        }
+        
+        .Zipbox{
+          display:inline-block;
+          color:grey;
+          margin-left: 300px;
+        }
+        
+        .choosefilebox input{
+         float:right;
+        }
+        
+        
+        textarea{
+        resize:none;
+        margin-left: 300px;
+        display: inline-block;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div id="redbox">
+        <h>Request For New PAN Card Or/And Changes Or Correction in PAN Data</h>
+        <p>Field marked with * (asterisk) are mandatory.To avoid mistake(s).please refer guidelines and instruction</p>
+    </div>
+
+    <table>
+        <tr>
+            <td style="width:5%"> </td>
+            <td> <span style="color:#FF0000">*</span>Are you an Indian Citizen
+                <div class="checkboxtypes">
+                    <label>
+  <input type="radio" name="choice-radio">
+  Yes
+</label>
+                    <label>
+  <input type="radio" name="choice-radio">
+  No
+</label>
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td style="width:5%"> </td>
+            <td> <span style="color:#FF0000">*</span>Permanent Account Number(PAN)
+                <div class="checkboxtypes">
+                    <label>
+  <input type="rectangle" name="text-box">
+</tr>
+
+<tr>
+  <td style = "width:5%"> 
+  <label>
+    <input type="checkbox" name="square">
+    </input>
+  </label>
+            </td>
+            <td> <span style="color:#FF0000">*</span>1.Name</td>
+        </tr>
+
+        <tr>
+            <td style="width:5%"> </td>
+            <td>Tittle
+                <div class="checkboxtypes">
+                    <label>
+       Shri/Mr.
+  <input type="radio" name="choice-radio">
+  <div class="spacing">
+    Smt/Mrs.
+  <input type="radio" name="Tittle-spacing">
+  </div>
+  <div class ="spacing">
+    Kumari/Ms
+  <input type="radio" name="Tittle-spacing">
+  </div>
+  <div class ="spacing">
+    M/s
+  <input type="radio" name="Tittle-spacing">
+</tr>
+
+
+<tr>
+  <td style = "width:5%"> </td>
+  <td>
+    <div class = "namebox">
+    Last Name/Surname
+    <br>
+     <label>
+    <input type="rectangle" name="text-box">
+    </div>
+    </label>
+    <div class="spacing">
+    <div class="namebox">
+    First Name
+    <br>
+    <label>
+    <input type="rectangle" name="text-box">
+    </div>
+    </label>
+    <div class="spacing">
+     <div class="namebox">
+    Middle Name
+    <br>
+    <label>
+    <input type="rectangle" name="text-box">
+    </div>
+    </label>
+    </td>
+    </div>
+    </tr>
+
+
+ <tr>
+            <td style="width:5%"> </td>
+            <td> <span style="color:#FF0000">*</span><b>Name as you would like it printed on the card</b>(Prefix like Shri,Smt,Kumari,late,Dr,CA,Ms,Mr,Mrs,M/s,Aliasetc. are not allowed ) 
+</tr>
+
+ <tr>
+            <td style="width:5%"> </td>
+            <td> <b> Whether mother is single parent and you wish to apply for PAN by furnishinig the name of your mother only</b>
+            <div class="checkboxtypes">
+                    <label>
+  <input type="radio" name="choice-radio">
+  Yes
+</label>
+                    <label>
+  <input type="radio" name="choice-radio">
+  No
+</label>
+                </div>
+    </tr>
+
+
+<tr>
+  <td style = "width:5%"> 
+  <label>
+    <input type="checkbox" name="square">
+    </input>
+  </label>
+            </td>
+            <td> <span style="color:#FF0000">*</span><b>Father's Name</b>(Mandatory field Even married women should give father's name only.)
+            </tr>
+
+
+<tr>
+  <td style = "width:5%"> </td>
+  <td>
+    <div class = "namebox">
+    <b>Last Name/Surname
+    <br>
+     <label>
+    <input type="rectangle" name="text-box">
+    </div>
+    </label>
+    <div class="spacing">
+    <div class="namebox">
+    First Name
+    <br>
+    <label>
+    <input type="rectangle" name="text-box">
+    </div>
+    </label>
+    <div class="spacing">
+     <div class="namebox">
+    Middle Name
+    <br>
+    <label>
+    <input type="rectangle" name="text-box">
+    </div>
+    </label>
+    </td>
+    </div>
+    </b>
+    </tr>
+
+
+
+<tr>
+  <td style = "width:5%"> 
+  <label>
+    <input type="checkbox" name="square">
+    </input>
+  </label>
+            </td>
+            <td> <span style="color:#FF0000">*</span><b>Mother's Name</b>(This Field is optional.)
+            </tr>
+
+
+<tr>
+  <td style = "width:5%"> </td>
+  <td>
+    <div class = "namebox">
+    <b>Last Name/Surname
+    <br>
+     <label>
+    <input type="rectangle" name="text-box">
+    </div>
+    </label>
+    <div class="spacing">
+    <div class="namebox">
+    First Name
+    <br>
+    <label>
+    <input type="rectangle" name="text-box">
+    </div>
+    </label>
+    <div class="spacing">
+     <div class="namebox">
+    Middle Name
+    <br>
+    <label>
+    <input type="rectangle" name="text-box">
+    </div>
+    </label>
+    </td>
+    </div>
+    </b>
+    </tr>
+
+
+  <tr>
+            <td style="width:5%"> </td>
+            <td> <b> 4.Select Parent name which is to printed o the card</b>
+            <br>
+            (In case no option is provided then PAN card will be issued with father's name.)
+            <div class="checkboxtypes">
+                    <label>
+  <input type="radio" name="choice-radio">
+  Father Name
+</label>
+                    <label>
+  <input type="radio" name="choice-radio">
+  Mother Name
+</label>
+                </div>
+    </tr>   
+
+
+ <tr>
+  <td style = "width:5%"> 
+  <label>
+    <input type="checkbox" name="square">
+    </input>
+  </label>
+            </td>
+            <td> <span style="color:#FF0000">*</span><b>5.Date of Birth /Incorporation/Agreement/Partnership<br> or Trusted Deed/Formation of Body of Individuals/<br>Association of Persons</b> <div class ="DOB">
+                <label for ="birthdate"></label>
+                <input type="number" name="DOB" placeholder="dd/mm/yyyyy">
+                </div>
+                </td>
+
+</tr>
+
+
+<tr>
+            <td style="width:5%">
+             <label>
+    <input type="checkbox" name="square">
+    </input>
+    </td>
+  </label>
+            <td><span style="color:#FF0000">*</span><b>6. Gender</b>
+                <div class="checkboxtypes">
+                    <label>
+    Male
+  <input type="radio" name="choice-radio">
+  <div class="spacing">
+    Female.
+  <input type="radio" name="Tittle-spacing">
+  </div>
+  <div class ="spacing">
+    Transgender
+  <input type="radio" name="Tittle-spacing">
+  </div>
+
+</tr>
+
+
+<tr>
+            <td style="width:5%">
+             <label>
+    <input type="checkbox" name="square">
+    </input>
+    </td>
+  </label>
+            <td><b> 7.Photo Mismatch</td>
+</tr>
+
+
+<tr>
+            <td style="width:5%">
+             <label>
+    <input type="checkbox" name="square">
+    </input>
+    </td>
+  </label>
+            <td><b> 8. Signature Mismatch</td>
+</tr>
+
+
+
+<tr>
+            <td style="width:5%"> 
+                 <label>
+    <input type="checkbox" name="square">
+    </input>
+            </td>
+            <td> <span style="color:#FF0000">*</span><b>Address of communication</b>
+                <div class="checkboxtypes">
+                    <label>
+                        Residental
+  <input type="radio" name="choice-radio">
+</label>
+        <label>
+            Office
+  <input type="radio" name="choice-radio">
+</label>
+                </div>
+            </td>
+        </tr>
+
+
+<tr>
+            <td style="width:5%"> </td>
+            <div class="row"></div>
+            <td><b>Office Name</b>(to be filled only in case of office address)
+                <div class="officeaddress">
+                    <label>
+  <input type="rectangle" name="text-box">
+</tr>
+
+
+
+<tr>
+            <td style="width:5%"> </td>
+            <div class="row"></div>
+            <td><b>Flat/Door/Block No.
+                <div class="officeaddress">
+                    <label>
+  <input type="rectangle" name="text-box">
+</tr>
+
+
+<tr>
+            <td style="width:5%"> </td>
+            <div class="row"></div>
+            <td><b>Name of Premises/Building/Village
+                <div class="officeaddress">
+                    <label>
+  <input type="rectangle" name="text-box">
+</tr>
+
+
+<tr>
+            <td style="width:5%"> </td>
+            <div class="row"></div>
+            <td><b>Road/Street/Lane/Post Office
+                <div class="officeaddress">
+                    <label>
+  <input type="rectangle" name="text-box">
+</tr>
+
+
+<tr>
+            <td style="width:5%"> </td>
+            <div class="row"></div>
+            <td><b>Area/Locality/Taluka/Sub-Division
+                <div class="officeaddress">
+                    <label>
+  <input type="rectangle" name="text-box">
+</tr
+
+<tr>
+            <td style="width:5%"> </td>
+            <div class="row"></div>
+            <td><b>Town/City/District
+                <div class="officeaddress">
+                    <label>
+  <input type="rectangle" name="text-box">
+</tr>
+
+
+<tr>
+            <td style="width:5%"> </td>
+            <div class="row"></div>
+            <td><b>State/Union Territory
+                <div class="DropdownS">
+                <select name="drinks" required>
+      <option value="" disabled selected hidden>--Please Select--</option>
+      <option value="MH">Maharashtra</option>
+      <option value="DH">Delhi</option>
+      <option value="KOL">Kolkata</option>
+    </select>
+                </div> 
+                  
+  
+</tr>
+
+<tr>
+            <td style="width:5%"> </td>
+            <div class="row"></div>
+            <td><b>Pin(Indicating PIN is mandatory)
+                <div class="officeaddress">
+                    <label>
+  <input type="rectangle" name="text-box">
+</tr>
+
+<tr>
+            <td style="width:5%"> </td>
+            <div class="row"></div>
+            <td><b>Country
+                <div class="DropdownS">
+                <select name="country" required>
+      <option value="" disabled selected hidden>--Please Select--</option>
+      <option value="IN">India</option>
+      <option value="US">America</option>
+      <option value="RUS">Russia</option>
+    </select>
+                </div> 
+</tr>
+
+
+
+<tr>
+            <td style="width:5%">
+  
+    </td>
+            <td><b>Zip 
+            <div class="Zipbox">
+                    <label>
+  <input type="rectangle" name="text-box" style="background-color:lightgrey">
+            </td>
+</tr>
+
+
+<tr>
+  <td style = "width:5%"> 
+  <label>
+    <input type="checkbox" name="square">
+    </input>
+  </label>
+            </td>
+            <td> <span style="color:#FF0000">*</span><b>10.If you desire to update your other
+            address,give required details and &<u>S umbit proof of other address also</u>
+            </tr>
+</table>
+
+
+<tr>
+            <td style="width:5%"> 
+                
+            </td>
+            <td><b>For Paperless PAN Application</b>
+                <div class="checkboxtypes">
+                    <label>
+                        Yes
+  <input type="radio" name="choice-radio">
+</label>
+        <label>
+            No
+  <input type="radio" name="choice-radio">
+</label>
+                </div>
+            </td>
+        </tr>
+<br>
+
+<select name="country" required>
+      <option value="" disabled selected hidden>--Select--</option>
+      <option value="IN">India</option>
+      <option value="US">America</option>
+      <option value="RUS">Russia</option>
+    </select>
+
+<br>
+
+<div class="choosefilebox">
+  <div class="row"></div>
+ <label for="myfile">Upload Photo</label>
+  <input type="file" id="myfile" name="myfile">
+  </div>
+  <div class="choosefilebox">
+    <div class="row"></div>
+   <label for="myfile">Upload Documents</label>
+  <input type="file" id="myfile" name="myfile">
+</div>
+ <div class="choosefilebox">
+   <div class="row"></div>
+   <label for="myfile">Upload Signature</label>
+  <input type="file" id="myfile" name="myfile">
+</div>
+
+<div class="choosefilebox">
+  <div class ="row"></div>
+  <label>ALREADY UPLOADED PHOTO</label>
+  <input type="rectangle" name="text-box">
+  </div>
+  
+<div class="choosefilebox">
+  <div class ="row"></div>
+  <label>ALREADY UPLOADED SIGNATURE</label>
+  <input type="rectangle" name="text-box">
+  </div>  
+  
+<div class="documentsbox">
+  <label for ="text-box">ALREADY UPLOADED DOCUMENTS</label>
+  <textarea id="docbox" name="textbox" cols="50" rows="4" ></textarea>
+  
+</div>
+
+<button type="button" >Sumbit</button>
+  
+</body>
+</html>
